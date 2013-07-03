@@ -1,4 +1,4 @@
-jquery-plugin-svg-style
+SVG Style plugin for jQuery
 =======================
 
-SVG Style - jQuery plugin to manipulate the styles of SVG in runtime
+SVG Style - jQuery plugin to manipulate with styles of SVG in runtime
