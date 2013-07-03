@@ -1,0 +1,42 @@
+{
+    "name": "jquery.svgstyle",
+    "title": "SVG Style - manipulate with styles of SVG",
+    "description": "jQuery plugin to manipulate with styles of SVG in runtime",
+    "keywords": [
+        "svg",
+        "xml",
+        "image",
+        "data:image",
+        "base64"
+        "style",
+        "stylesheet",
+        "background-image"
+    ],
+    "version": "1.0.0",
+    "author" : {
+        "name" : "Vitalii Tereshchuk",
+        "email": "xvoland@gmail.com",
+        "url"  : "http://dotoca.net"
+    },
+    "maintainers": [
+        {
+            "name" : "Vitalii Tereshchuk",
+            "email": "xvoland@gmail.com",
+            "url"  : "http://dotoca.net"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url" : "https://github.com/jquery/jquery-color/blob/2.1.2/MIT-LICENSE.txt"
+        }
+    ],
+    "bugs"        : "https://github.com/xvoland/jquery-plugin-svg-style/issues",
+    "homepage"    : "https://github.com/xvoland/jquery-plugin-svg-style",
+    "demo"        : "http://xvoland.github.io/jquery-plugin-svg-style/",
+    "docs"        : "https://github.com/xvoland/jquery-plugin-svg-style",
+    "download"    : "https://github.com/xvoland/jquery-plugin-svg-style/archive/master.zip",
+    "dependencies": {
+        "jquery": ">=1.9.1"
+    }
+}
