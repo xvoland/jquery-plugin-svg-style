@@ -3,6 +3,8 @@
     "title": "SVG Style - manipulate with styles of SVG",
     "description": "jQuery plugin to manipulate with styles of SVG in runtime",
     "keywords": [
+        "ui",
+        "jquery",
         "svg",
         "xml",
         "image",
