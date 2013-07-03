@@ -1,62 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>SVG Style - jQuery plugin to manipulate the styles of SVG in runtime</title>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Jquery-plugin-svg-style : SVG Style - jQuery plugin to manipulate with styles of SVG in runtime" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://raw.github.com/xvoland/jquery-plugin-svg-style/master/jquery.svgstyle.js"></script>
+    <style type="text/css">
+    /*<![CDATA[*/
+    .icon-github {
+        width: 100px;
+        height: 100px;
+        background-size: 100% 100%;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Igkgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGcgaWQ9IkdyaWQiIGRpc3BsYXk9Im5vbmUiPgk8cmVjdCBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMCIgeTE9IjMyIiB4Mj0iNTEyIiB5Mj0iMzIiLz4JPGxpbmUgZGlzcGxheT0iaW5saW5lIiBmaWxsPSJub25lIiBzdHJva2U9IiNBOUNDREIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgeDE9IjAiIHkxPSI2NCIgeDI9IjUxMiIgeTI9IjY0Ii8+CTxsaW5lIGRpc3BsYXk9ImlubGluZSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjQTlDQ0RCIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHgxPSIwIiB5MT0iOTYiIHgyPSI1MTIiIHkyPSI5NiIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMCIgeTE9IjEyOCIgeDI9IjUxMiIgeTI9IjEyOCIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMCIgeTE9IjE2MCIgeDI9IjUxMiIgeTI9IjE2MCIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMCIgeTE9IjE5MiIgeDI9IjUxMiIgeTI9IjE5MiIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMCIgeTE9IjIyNCIgeDI9IjUxMiIgeTI9IjIyNCIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMCIgeTE9IjI1NiIgeDI9IjUxMiIgeTI9IjI1NiIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMCIgeTE9IjI4OCIgeDI9IjUxMiIgeTI9IjI4OCIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMCIgeTE9IjMyMCIgeDI9IjUxMiIgeTI9IjMyMCIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMCIgeTE9IjM1MiIgeDI9IjUxMiIgeTI9IjM1MiIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMCIgeTE9IjM4NCIgeDI9IjUxMiIgeTI9IjM4NCIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMCIgeTE9IjQxNiIgeDI9IjUxMiIgeTI9IjQxNiIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGMDAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMCIgeTE9IjQ0OCIgeDI9IjUxMiIgeTI9IjQ0OCIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMCIgeTE9IjQ4MCIgeDI9IjUxMiIgeTI9IjQ4MCIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMzIiIHkxPSIwIiB4Mj0iMzIiIHkyPSI1MTIiLz4JPGxpbmUgZGlzcGxheT0iaW5saW5lIiBmaWxsPSJub25lIiBzdHJva2U9IiNBOUNDREIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgeDE9IjY0IiB5MT0iMCIgeDI9IjY0IiB5Mj0iNTEyIi8+CTxsaW5lIGRpc3BsYXk9ImlubGluZSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjQTlDQ0RCIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHgxPSI5NiIgeTE9IjAiIHgyPSI5NiIgeTI9IjUxMiIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMTI4IiB5MT0iMCIgeDI9IjEyOCIgeTI9IjUxMiIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMTYwIiB5MT0iMCIgeDI9IjE2MCIgeTI9IjUxMiIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMTkyIiB5MT0iMCIgeDI9IjE5MiIgeTI9IjUxMiIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMjI0IiB5MT0iMCIgeDI9IjIyNCIgeTI9IjUxMiIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMjU2IiB5MT0iMCIgeDI9IjI1NiIgeTI9IjUxMiIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMjg4IiB5MT0iMCIgeDI9IjI4OCIgeTI9IjUxMiIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMzIwIiB5MT0iMCIgeDI9IjMyMCIgeTI9IjUxMiIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMzUyIiB5MT0iMCIgeDI9IjM1MiIgeTI9IjUxMiIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMzg0IiB5MT0iMCIgeDI9IjM4NCIgeTI9IjUxMiIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iNDE2IiB5MT0iMCIgeDI9IjQxNiIgeTI9IjUxMiIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iNDQ4IiB5MT0iMCIgeDI9IjQ0OCIgeTI9IjUxMiIvPgk8bGluZSBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E5Q0NEQiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iNDgwIiB5MT0iMCIgeDI9IjQ4MCIgeTI9IjUxMiIvPjwvZz48cGF0aCBkPSJNNDM4Ljg1NywyNjUuMTQzYzAsNDcuODEtMTMuOTUzLDkwLjgxLTQxLjg1NywxMjlzLTYzLjk1Miw2NC42MTktMTA4LjE0Myw3OS4yODZjLTUuMTQzLDAuOTUyLTguOTA1LDAuMjg1LTExLjI4Ni0yCWMtMi4zODEtMi4yODYtMy41NzEtNS4xNDMtMy41NzEtOC41NzF2LTYwLjI4NmMwLTE4LjQ3Ni00Ljk1Mi0zMi0xNC44NTctNDAuNTcxYzEwLjg1Ny0xLjE0MywyMC42MTktMi44NTcsMjkuMjg2LTUuMTQzCWM4LjY2Ny0yLjI4NiwxNy42MTktNiwyNi44NTctMTEuMTQzYzkuMjM3LTUuMTQ0LDE2Ljk1Mi0xMS40NzcsMjMuMTQzLTE5YzYuMTktNy41MjQsMTEuMjM4LTE3LjUyNCwxNS4xNDMtMzAJYzMuOTA1LTEyLjQ3Nyw1Ljg1Ny0yNi44MTEsNS44NTctNDNjMC0yMy4wNDgtNy41MjQtNDIuNjY3LTIyLjU3MS01OC44NTdjNy4wNDctMTcuMzMzLDYuMjg1LTM2Ljc2Mi0yLjI4Ni01OC4yODYJYy01LjMzMy0xLjcxNC0xMy4wNDgtMC42NjctMjMuMTQzLDMuMTQzYy0xMC4wOTYsMy44MS0xOC44NTcsOC0yNi4yODYsMTIuNTcxbC0xMC44NTcsNi44NTdjLTE3LjcxNC00Ljk1Mi0zNi03LjQyOC01NC44NTYtNy40MjgJYy0xOC44NTcsMC0zNy4xNDMsMi40NzYtNTQuODU3LDcuNDI4Yy0zLjA0Ny0yLjA5NS03LjA5NS00LjY2Ny0xMi4xNDMtNy43MTRjLTUuMDQ4LTMuMDQ4LTEzLTYuNzE0LTIzLjg1Ny0xMQljLTEwLjg1Ny00LjI4Ni0xOS4wNDctNS41NzItMjQuNTcxLTMuODU3Yy04LjM4MSwyMS41MjQtOS4wNDgsNDAuOTUzLTIsNTguMjg2Yy0xNS4wNDgsMTYuMTkxLTIyLjU3MSwzNS44MS0yMi41NzEsNTguODU3CWMwLDE2LjE5LDEuOTUyLDMwLjQ3Niw1Ljg1Nyw0Mi44NTdzOC45MDUsMjIuMzgxLDE1LDMwczEzLjc2MiwxNCwyMywxOS4xNDRjOS4yMzgsNS4xNDMsMTguMTksOC44NTYsMjYuODU3LDExLjE0MwljOC42NjcsMi4yODUsMTguNDI4LDQsMjkuMjg2LDUuMTQzYy03LjYxOSw2Ljg1Ny0xMi4yODYsMTYuNjY2LTE0LDI5LjQyOWMtNCwxLjkwNS04LjI4NiwzLjMzMy0xMi44NTcsNC4yODYJYy00LjU3MSwwLjk1MS0xMCwxLjQyOC0xNi4yODYsMS40MjhzLTEyLjUyNC0yLjA0Ny0xOC43MTQtNi4xNDNzLTExLjQ3Ni0xMC4wNDgtMTUuODU3LTE3Ljg1NwljLTMuNjE5LTYuMDk2LTguMjM4LTExLjA0Ny0xMy44NTctMTQuODU3Yy01LjYxOS0zLjgwOS0xMC4zMzMtNi4wOTUtMTQuMTQzLTYuODU2TDY4LDM1MC41NzFjLTQsMC02Ljc2MiwwLjQyOS04LjI4NiwxLjI4NglzLTIsMS45NTItMS40MjksMy4yODVjMC41NzEsMS4zMzQsMS40MjksMi42NjcsMi41NzEsNGMxLjE0MywxLjMzNCwyLjM4MSwyLjQ3NywzLjcxNCwzLjQyOWwyLDEuNDI5CWM0LjE5LDEuOTA0LDguMzMzLDUuNTIzLDEyLjQyOSwxMC44NTdjNC4wOTUsNS4zMzMsNy4wOTUsMTAuMTg5LDksMTQuNTcxTDkwLjg1NywzOTZjMi40NzcsNy4yMzgsNi42NjcsMTMuMDk2LDEyLjU3MiwxNy41NzEJczEyLjI4Niw3LjMzMywxOS4xNDMsOC41NzFjNi44NTcsMS4yMzgsMTMuNDc3LDEuOTA1LDE5Ljg1NywyYzYuMzgxLDAuMDk2LDExLjY2Ny0wLjIzOCwxNS44NTctMWw2LjU3MS0xLjE0MwljMCw3LjIzOCwwLjA0OCwxNS43MTQsMC4xNDMsMjUuNDI5YzAuMDk1LDkuNzE0LDAuMTQzLDE0Ljg1NiwwLjE0MywxNS40MjljMCwzLjQyOC0xLjIzOCw2LjI4NS0zLjcxNCw4LjU3MQljLTIuNDc3LDIuMjg1LTYuMjg2LDIuOTUyLTExLjQyOSwyYy00NC4xOS0xNC42NjctODAuMjM4LTQxLjA5Ni0xMDguMTQzLTc5LjI4NlMwLDMxMi45NTIsMCwyNjUuMTQzCUMwLDIyNS4zMzMsOS44MSwxODguNjE5LDI5LjQyOSwxNTVjMTkuNjE5LTMzLjYxOSw0Ni4yMzgtNjAuMjM4LDc5Ljg1Ny03OS44NTdjMzMuNjE5LTE5LjYxOSw3MC4zMzMtMjkuNDI4LDExMC4xNDMtMjkuNDI4CXM3Ni41MjMsOS44MSwxMTAuMTQzLDI5LjQyOEMzNjMuMTksOTQuNzYyLDM4OS44MSwxMjEuMzgxLDQwOS40MjksMTU1UzQzOC44NTcsMjI1LjMzMyw0MzguODU3LDI2NS4xNDNMNDM4Ljg1NywyNjUuMTQzeiIvPjwvc3ZnPg==");
+        margin: 20px;
+    }
+    /*]]>*/
+    </style>
+</head>
+<body>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<script>
+$(document).ready(function(){
+    $('[data-svg-style]').svgStyle();
 
-    <title>Jquery-plugin-svg-style</title>
-  </head>
+    $('#rnd').click(function(){
+        $('#test').svgStyle("fill: #" + Math.floor(Math.random()*16777215).toString(16));
+    });
+});
+</script>
 
-  <body>
+<i class="icon-github"></i>
+<i class="icon-github" data-svg-style="fill:#bbbbbb"></i>
+<i id="test" class="icon-github" data-svg-style="fill:rgb(85,170,128)"></i>
+<i class="icon-github" data-svg-style="fill:red;fill-opacity: 0.5;"></i>
+<i class="icon-github" data-svg-style="fill:red;stroke:green;stroke-width:10;"></i>
+<br>
+<button id="rnd">Click here</button>
+<br><br>
+Welcome to <a href="http://dotoca.net/" title="http://dotoca.net">my personal site</a> and <a href="https://github.com/xvoland/jquery-plugin-svg-style">Github page.</a>
+Licensed under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT license.</a>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/xvoland/jquery-plugin-svg-style">View on GitHub</a>
-
-          <h1 id="project_title">Jquery-plugin-svg-style</h1>
-          <h2 id="project_tagline">SVG Style - jQuery plugin to manipulate with styles of SVG in runtime</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/xvoland/jquery-plugin-svg-style/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/xvoland/jquery-plugin-svg-style/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="jquery-plugin-svg-style" class="anchor" href="#jquery-plugin-svg-style"><span class="octicon octicon-link"></span></a>jquery-plugin-svg-style</h1>
-
-<p>SVG Style - jQuery plugin to manipulate the styles of SVG in runtime</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Jquery-plugin-svg-style maintained by <a href="https://github.com/xvoland">xvoland</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-42223366-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-
-  </body>
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-42223366-1");
+        pageTracker._trackPageview();
+    } catch(err) {}
+</script>
+</body>
 </html>
