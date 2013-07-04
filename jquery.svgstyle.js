@@ -9,7 +9,7 @@
  * Project home:
  *   http://dotoca.net/jquery-plugin-svg-style/
  *
- * Version:  1.0.3
+ * Version:  1.0.4
  *
  */
 
