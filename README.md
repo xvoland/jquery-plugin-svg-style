@@ -1,6 +1,6 @@
 # jQuery.SVGStyle plugin
 
-SVG Style - plugin to manipulate runtime with styles of SVG and and it's magic.
+SVG Style - plugin to manipulate runtime with styles of SVG and it's magic.
 
 This is a simple way to manipulate with SVG-styles of "inline" data like `url("data:image/svg+xml;base64,… ")`!
 
