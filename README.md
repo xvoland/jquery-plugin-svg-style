@@ -73,4 +73,4 @@ If you'd like to contribute to this project, create a branch and send a pull req
 Copyright © 2013 Vitalii Tereshchuk. Licensed under the MIT and GPL licenses.
 
 #### About me and welcome
-I'm an independent developer and researcher in web development. Many of you'll be happy to see on [my website](http://dotoca.net)
+I'm an independent developer and researcher in web development. Many of you I'll be happy to see on [my website](http://dotoca.net)
