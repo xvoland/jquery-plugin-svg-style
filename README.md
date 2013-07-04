@@ -1,6 +1,6 @@
 # jQuery.SVGStyle plugin
 
-SVG Style - plugin to manipulate runtime with styles of SVG and it's magic.
+SVG Style - plugin to manipulate runtime with styles of SVG and and it's magic.
 
 This is a simple way to manipulate with SVG-styles of "inline" data like `url("data:image/svg+xml;base64,… ")`!
 
@@ -81,7 +81,7 @@ HTML:
 
 ```
 
-Also you can use the dynamic change of style like `$('#id').svgStyle('fill:#333')` or `$('.class').svgStyle('stroke: #b3b3b3; stroke-width: 5')`
+Also you can use the dynamic change of style like `$('#id').svgStyle('fill:#333')` or `$('.class').svgStyle('stroke: #b3b3b3; stroke-width: 5')` or set it by default in tag `data-svg-style="fill:#bbb"`
 
 Also allowed to use in styles like
 
