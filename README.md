@@ -67,7 +67,7 @@ More information can be found [here](http://www.w3.org/TR/SVG/styling.html)
 
 # License
 
-Copyright © 2013 Vitalii Tereshchuk. Licensed under the MIT license.
+Copyright © 2013 Vitalii Tereshchuk. Licensed under the MIT and GPL licenses.
 
 #### About me and welcome
 I'm an independent developer and researcher in web development. Many of you'll be happy to see on [my website](http://dotoca.net)
