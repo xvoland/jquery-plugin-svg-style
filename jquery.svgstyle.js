@@ -9,7 +9,7 @@
  * Project home:
  *   http://dotoca.net/jquery-plugin-svg-style/
  *
- * Version:  1.0.0
+ * Version:  1.0.3
  *
  */
 
@@ -49,8 +49,6 @@
                         xml = xml.replace(/<(line|rect|circle|ellipse|path|polyline|polygon)/g, '$& style="' + style + '"');
                     }
 
-                    // console.log("debug XML: " + xml);
-
                     xml = window.btoa(xml);   // convert -> base64
 
                     $self.css('background-image', "url('data:image/svg+xml;base64," + xml + "')");
@@ -62,7 +60,3 @@
         });
     };
 })(jQuery);
-
-// $(document).ready(function(){
-//   $('[data-svg-style]').svgFiller();
-// });
