@@ -1,7 +1,7 @@
 {
     "name": "svgstyle",
     "title": "SVGStyle - manipulate with styles of SVG inline like 'data:image/svg+xml;base64'",
-    "description": "SVGStyle - plugin to manipulate runtime with styles of SVG and and it's magic. This is a simple way to manipulate with SVG-styles of 'inline' data like url(data:image/svg+xml;base64,...)",
+    "description": "Plugin to manipulate runtime with styles of SVG and it's magic. This is a simple way to manipulate with SVG-styles of 'inline' data like url(data:image/svg+xml;base64,...)",
     "keywords": [
         "ui",
         "jquery",
@@ -38,6 +38,6 @@
     "docs"        : "https://github.com/xvoland/jquery-plugin-svg-style",
     "download"    : "https://github.com/xvoland/jquery-plugin-svg-style/archive/master.zip",
     "dependencies": {
-        "jquery": ">=1.9.1"
+        "jquery": ">=1.7.1"
     }
 }
