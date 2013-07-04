@@ -31,7 +31,6 @@ CSS:
 
 ```
 
-    <style>
     .icon-github {
         display: inline-block;
         width: 32px;
@@ -41,7 +40,7 @@ CSS:
         background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj…vc3ZnPg==");
         margin: 15px;
     }
-    </style>
+
 ```
 
 HTML:
