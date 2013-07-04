@@ -9,7 +9,7 @@
         "xml",
         "image",
         "data:image",
-        "base64"
+        "base64",
         "style",
         "stylesheet",
         "background-image"
