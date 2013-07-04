@@ -64,6 +64,9 @@ Also allowed to use in styles like
 
 More information can be found [here](http://www.w3.org/TR/SVG/styling.html)
 
+# Contributing
+
+If you'd like to contribute to this project, create a branch and send a pull request for that branch. Lint and test your code.
 
 # License
 
