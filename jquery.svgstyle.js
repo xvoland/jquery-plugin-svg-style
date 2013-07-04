@@ -29,7 +29,7 @@
  */
 
 
-(function($) {
+;(function($) {
     $.fn.svgStyle = function(params) {
         return this.each(function(){
             var $self = $(this);
