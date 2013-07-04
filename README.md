@@ -14,9 +14,10 @@ This is a simple way to manipulate with SVG-styles of `url("data:image/svg+xml;b
 
 # How it works
 Here is a simple SVGStyle usage:
-```
 
-    ...
+HEAD:
+
+```
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="jquery.svgstyle.js"></script>
     <script>
@@ -24,7 +25,12 @@ Here is a simple SVGStyle usage:
             $('[data-svg-style]').svgStyle();
         });
     </script>
-    …
+```
+
+CSS:
+
+```
+
     <style>
     .icon-github {
         display: inline-block;
@@ -34,12 +40,14 @@ Here is a simple SVGStyle usage:
         background-repeat: no-repeat;
         background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj…vc3ZnPg==");
         margin: 15px;
-}
+    }
     </style>
-    …
-    <body>
+```
+
+HTML:
+
+```
     <i class="icon-github" data-svg-style="fill:#bbb"></i>
-    ...
 
 ```
 
