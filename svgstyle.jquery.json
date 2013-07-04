@@ -1,7 +1,7 @@
 {
     "name": "svgstyle",
-    "title": "SVG Style - manipulate with styles of SVG",
-    "description": "jQuery plugin to manipulate with styles of SVG in runtime",
+    "title": "SVGStyle - manipulate with styles of SVG inline like 'data:image/svg+xml;base64'",
+    "description": "SVGStyle - plugin to manipulate runtime with styles of SVG and and it's magic. This is a simple way to manipulate with SVG-styles of 'inline' data like url(data:image/svg+xml;base64,...)",
     "keywords": [
         "ui",
         "jquery",
@@ -13,7 +13,7 @@
         "stylesheet",
         "background-image"
     ],
-    "version": "1.0.4",
+    "version": "1.0.5",
     "author" : {
         "name" : "Vitalii Tereshchuk",
         "email": "xvoland@gmail.com",

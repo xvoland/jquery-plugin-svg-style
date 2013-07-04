@@ -1,16 +1,49 @@
 # jQuery.SVGStyle plugin
 
-SVG Style - jQuery plugin to manipulate with styles of SVG in runtime.
-This is a simple way to manipulate with SVG-styles of `url("data:image/svg+xml;base64,… ")`!
+SVG Style - plugin to manipulate runtime with styles of SVG and and it's magic.
+
+This is a simple way to manipulate with SVG-styles of "inline" data like `url("data:image/svg+xml;base64,… ")`!
+
+### Why you need use SVG at all?
+SVG is an image format for vector graphics. It literally means Scalable Vector Graphics. Basically, what you work with in Adobe Illustrator. You can use SVG on the web pretty easily.
+
+- Small file sizes that compress well
+- Scales to any size without losing clarity (except very tiny)
+- Looks great on *retina displays* (Macbook Pro Retina, iPhone, iPad, etc)
+- Design control like CSS
+- Using SVG as an `<img>`
+
+Many CSS-frameworks like `Modernizr` can help us detect the `background-image` with a supported format. One HTTP request will be made instead of two. `Modernizr` adds a class name of "no-svg" to the html element if it doesn't support SVG.
 
 
 ## Demo
 
 [How it works, you can find here](http://xvoland.github.io/jquery-plugin-svg-style/)
 
-## Requirements
+### Requirements
 
-`jQuery` 1.9.x or later.
+`jQuery` 1.7.x or later.
+
+
+## Browser support
+
+- Internet Explorer >= 9.0
+- FireFox >= 4.0
+- Google Chrome >= 4.0
+- Safari >= 3.2
+- Opera > 9.00
+
+### Mobile browsers
+- Android Browser >= 3.0
+- Blackberry Browser >= 7.0
+- FireFox for Android >= 22.0
+- Google Chrome for Android >= 27.0
+- iOS Safari >= 3.2
+- Opera Mini >= 5.0
+- Opera Mobile >= 10.0
+
+SVG support 84.39% todays browsers
+
 
 # How it works
 Here is a simple SVGStyle usage:
