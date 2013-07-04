@@ -1,5 +1,5 @@
 {
-    "name": "jquery.svgstyle",
+    "name": "svgstyle",
     "title": "SVG Style - manipulate with styles of SVG",
     "description": "jQuery plugin to manipulate with styles of SVG in runtime",
     "keywords": [
@@ -8,8 +8,7 @@
         "svg",
         "xml",
         "image",
-        "data:image",
-        "base64"
+        "base64",
         "style",
         "stylesheet",
         "background-image"
