@@ -28,14 +28,14 @@ $(document).ready(function(){
     $('[data-svg-style]').svgStyle();
 
     $('#rnd').click(function(){
-        $('#test').svgStyle("fill: #" + Math.floor(Math.random()*16777215).toString(16));
+        $('#test').svgStyle("#" + Math.floor(Math.random()*16777215).toString(16));
     });
 });
 </script>
 
 <i class="icon-github"></i>
-<i class="icon-github" data-svg-style="fill:#bbbbbb"></i>
-<i id="test" class="icon-github" data-svg-style="fill:rgb(85,170,128)"></i>
+<i class="icon-github" data-svg-style="fill:rgb(85,170,128)"></i>
+<i id="test" class="icon-github" data-svg-style="#bbbbbb"></i>
 <i class="icon-github" data-svg-style="fill:red;fill-opacity: 0.5;"></i>
 <i class="icon-github" data-svg-style="fill:red;stroke:green;stroke-width:10;"></i>
 <br>
