@@ -9,7 +9,7 @@
  * Project home:
  *   http://dotoca.net/jquery-plugin-svg-style/
  *
- * Version:  1.0.5
+ * Version:  1.0.0
  *
  */
 
@@ -42,12 +42,19 @@
                     var xml = window.atob(data);
                     style = params === undefined ? $self.data('svgStyle') : params;
 
+                    if( style.match(/^(#[0-9a-f]{6}|#[0-9a-f]{3}|rgb\((\d+),(\d+),(\d+)\))$/i) ) {
+                        // user use: data-svg-style="#bbb|#bbbbbb|rgb(1,1,1)"
+                        style = 'fill:' + style;
+                    }
+
                     // paint xml
                     if( xml.match(/style="/) ) {
                         xml = xml.replace(/style="(.*?)"/g, 'style="' + style + '"');
                     } else {
                         xml = xml.replace(/<(line|rect|circle|ellipse|path|polyline|polygon)/g, '$& style="' + style + '"');
                     }
+
+                    // console.log("debug XML: " + xml);
 
                     xml = window.btoa(xml);   // convert -> base64
 
@@ -60,3 +67,7 @@
         });
     };
 })(jQuery);
+
+// $(document).ready(function(){
+//   $('[data-svg-style]').svgFiller();
+// });
