@@ -29,7 +29,7 @@
  */
 
 
-(function($) {
+;(function($) {
     $.fn.svgStyle = function(params) {
         return this.each(function(){
             var $self = $(this);
@@ -41,6 +41,11 @@
                     var data = url.match(/.+base64,(.*)\)/)[1];
                     var xml = window.atob(data);
                     style = params === undefined ? $self.data('svgStyle') : params;
+
+                    if( style.match(/^(#[0-9a-f]{6}|#[0-9a-f]{3}|rgb\((\d+),(\d+),(\d+)\))$/i) ) {
+                        // user use: data-svg-style="#bbb|#bbbbbb|rgb(1,1,1)"
+                        style = 'fill:' + style;
+                    }
 
                     // paint xml
                     if( xml.match(/style="/) ) {
