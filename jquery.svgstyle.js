@@ -9,7 +9,7 @@
  * Project home:
  *   http://dotoca.net/jquery-plugin-svg-style/
  *
- * Version:  1.0.0
+ * Version:  1.1.5
  *
  */
 
@@ -40,7 +40,7 @@
                 if(!url.length || url !== "none") {
                     var data = url.match(/.+base64,(.*)\)/)[1];
                     var xml = window.atob(data);
-                    style = params === undefined ? $self.data('svgStyle') : params;
+                    var style = params === undefined ? $self.data('svgStyle') : params;
 
                     if( style.match(/^(#[0-9a-f]{6}|#[0-9a-f]{3}|rgb\((\d+),(\d+),(\d+)\))$/i) ) {
                         // user use: data-svg-style="#bbb|#bbbbbb|rgb(1,1,1)"
