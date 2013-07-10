@@ -1,7 +1,7 @@
 {
     "name": "svgstyle",
     "title": "SVGStyle - manipulate with styles of SVG inline like 'data:image/svg+xml;base64'",
-    "description": "Plugin to manipulate runtime with styles of SVG and it's magic. This is a simple way to manipulate with SVG-styles of 'inline' data like url(data:image/svg+xml;base64,...)",
+    "description": "Plugin to manipulate runtime with styles of SVG and it's magic. This is a simple way to manipulate with SVG-styles of 'inline' data like url(data:image/svg+xml;base64,...). You can use the dynamic change of style like $('#id').svgStyle('fill:#333') or $('.class').svgStyle('stroke: #b3b3b3; stroke-width: 5') or set it by default in tag data-svg-style='fill:#bbb'. And now you can set the color like data-svg-style='#xxx|#xxxxxx|rgb(x,x,x)'",
     "keywords": [
         "ui",
         "jquery",
@@ -13,7 +13,7 @@
         "stylesheet",
         "background-image"
     ],
-    "version": "1.0.5",
+    "version": "1.1.5",
     "author" : {
         "name" : "Vitalii Tereshchuk",
         "email": "xvoland@gmail.com",
