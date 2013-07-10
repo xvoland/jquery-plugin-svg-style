@@ -81,7 +81,9 @@ HTML:
 
 ```
 
-Also you can use the dynamic change of style like `$('#id').svgStyle('fill:#333')` or `$('.class').svgStyle('stroke: #b3b3b3; stroke-width: 5')` or set it by default in tag `data-svg-style="fill:#bbb"`
+Also you can use the dynamic change of style like `$('#id').svgStyle('fill:#333')` or `$('.class').svgStyle('stroke: #b3b3b3; stroke-width: 5')` or set it by default in tag `data-svg-style="fill:#bbb"`.
+
+And now you can set the color like `data-svg-style="#xxx|#xxxxxx|rgb(x,x,x)"`
 
 Also allowed to use in styles like
 
