@@ -44,7 +44,6 @@ Many CSS-frameworks like `Modernizr` can help us detect the `background-image` w
 
 SVG support 84.39% todays browsers
 
-
 # How it works
 Here is a simple SVGStyle usage:
 
@@ -95,6 +94,10 @@ Also allowed to use in styles like
 - and etc…
 
 More information can be found [here](http://www.w3.org/TR/SVG/styling.html)
+
+# Installation
+You can install jquery-placeholder by using [Bower](http://bower.io/).
+
 
 # Contributing
 
