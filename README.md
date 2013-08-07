@@ -95,7 +95,7 @@ Also allowed to use in styles like
 
 More information can be found [here](http://www.w3.org/TR/SVG/styling.html)
 
-# Installation
+# Bower package Installation
 You can install jquery-placeholder by using [Bower](http://bower.io/).
 
 
