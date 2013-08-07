@@ -1,10 +1,18 @@
 {
   "name": "jquery-svgstyle",
   "title": "jQuery SVGStyle Plugin - manipulate with styles of SVG inline like 'data:image/svg+xml;base64'",
-  "description": "jQuery SVGStyle Plugin to manipulate runtime with SVG. This is a simple way to manipulate 'inline' data url(data:image/svg+xml;base64,...)",
-  "kaywords": ["jquery", "plugin", "svg", "styles", "xml", "data", "base64"],
+  "description": "jQuery SVGStyle Plugin to manipulate runtime with SVG. This is a simple way to manipulate inline-data url(data:image/svg+xml;base64)",
+  "keywords": [
+			  	"jquery",
+			  	"plugin",
+			  	"svg",
+			  	"styles",
+			  	"xml",
+			  	"data",
+			  	"base64"
+  ],
   "version": "v1.1.6",
-  "main": ["jquery.svgstyle.js"],
+  "main": "jquery.svgstyle.js",
   "dependencies": {
     "jquery": ">=1.7.1"
   },
@@ -12,7 +20,7 @@
     "type": "git",
     "url": "git://github.com/jquery-plugin-svg-style.git"
   },
-  "author": "Vitalii Tereshchuk",
-  "license": "MIT",
-  "readmeFilename": "README.md"
+  "author": ["Vitalii Tereshchuk"],
+  "homepage": "https://github.com/xvoland/jquery-plugin-svg-style",
+  "license": "MIT"
 }
