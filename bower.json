@@ -1,0 +1,10 @@
+{
+  "name": "jquery.svgstyle",
+  "version": "1.1.6",
+  "main": [
+    "./jquery.svgstyle"
+  ],
+  "dependencies": {
+    "jquery": ">=1.7.1"
+  }
+}
