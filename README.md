@@ -98,6 +98,12 @@ More information can be found [here](http://www.w3.org/TR/SVG/styling.html)
 # Bower package Installation
 You can install jquery-svgstyle by using [Bower](http://bower.io/).
 
+# Donate
+
+**Please, make a donation to support my work.**
+
+<a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VETGSS4J3F4H2'><img alt='Click here to lend your support to: assertHTMLValidate for PHPUnit and make a donation at www.pledgie.com !' src='https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif' border='0' /></a>
+
 
 # Contributing
 
